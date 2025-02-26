@@ -19,4 +19,10 @@ export class Generous {
 
   @Column({nullable: true})
   last_state: string;
+
+  @Column({nullable: true})
+  donations: string;
+
+  @Column({nullable: true, default: false})
+  isDonating: boolean;
 }
